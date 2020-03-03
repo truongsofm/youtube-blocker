@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Youtube Blocker",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "description": "https://truongsofm.blogspot.com/",
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon.png",
+      "24": "images/icon.png",
+      "32": "images/icon.png"
+    },
+    "default_title": "Youtube Blocker"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*"],
+    "js": ["./js/main.js"],
+    "css": ["./css/main.css"]
+  }]
+}
